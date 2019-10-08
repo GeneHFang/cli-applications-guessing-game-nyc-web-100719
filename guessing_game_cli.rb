@@ -3,13 +3,14 @@
 def run_guessing_game
 
     num = rand(6)
-
+    num+=1
+    numcomp = num.to_s
     numGuess = gets
 
    
 
     
-    if num == numGuess
+    if numcomp == numGuess
         puts "You guessed the correct number!"
     elsif numGuess == "exit"
         puts "Goodbye!"
